@@ -1,0 +1,8 @@
+    <bean name="/new_car.html" class="springmvc.web.CarNewController">
+        <property name="commandClass" value="springmvc.model.Car"/>
+        <property name="formView" value="carNew"/>
+        <property name="successView" value="list_cars.html"/>
+		<property name="validator">
+        	<bean class="springmvc.validator.CarValidator"/>
+        </property>
+    </bean>
